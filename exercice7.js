@@ -28,6 +28,8 @@ let imageManager = {
     },
 }
 
+let availableKeys = ["ArrowUp", "ArrowLeft", "ArrowRight", "ArrowDown"];
+
 imageManager.execute = function (key) {
     let methodName = imageManager[key]
     return methodName.apply(imageManager)
